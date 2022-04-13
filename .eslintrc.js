@@ -8,5 +8,8 @@ module.exports = {
     ecmaVersion: "latest",
   },
   plugins: ["vue"],
-  rules: {},
+  rules: {
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+  },
 };
