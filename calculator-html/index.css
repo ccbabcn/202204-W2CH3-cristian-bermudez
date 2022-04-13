@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+*{
+    font-family: 'Bebas Neue', cursive;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    background-color: #313131;
+}
+.container{
+    padding: 30px;
+}
+.calculator-body {
+     width: 360px;
+     display: grid;
+     grid-template-columns: auto auto auto auto;
+     row-gap: 20px;
+     background-color: #e6dcc8;
+     text-align: center;
+     border-radius: 20px;
+     padding: 30px;
+     margin: 0 auto;
+}
+
+.calculator-button {
+    font-size: 40px;
+    color: #fff;
+    background-color: #111111;
+    width: 50px;
+    margin: 0 10px;
+    border-radius:15px;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.operator-button{
+      background-color: #585858;
+}
+.calculator-button:hover{
+      background-color: #33333388;
+}
+.calculator-button:active{
+      color: #ffffff66;
+}
+.ac-button{
+    background-color: #8b2929;
+}
+.ac-button:hover{
+    background-color: #b95151;
+}
+.double-v{
+    grid-row-end: span 2;
+    padding-top: 60%;
+}
+.double-h{
+    width: auto;
+    grid-column-end: span 2;
+    
+  }
+.brand{
+     background-color: #6e0000;
+     color: #fff;
+     text-transform: uppercase;
+     padding: 10px;
+     font-size: 23px;
+     letter-spacing: 2px;
+ }
+.black-line{
+      background-color: #000;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      margin: 0 0 0 10px;
+}
+.screen{
+      font-family: 'Inconsolata', monospace;
+      font-size: 40px;
+      text-align: right;
+      padding: 10px;
+      background-color: #465249;
+      border: 5px solid #333333;
+      border-style: inset;
+      height: 70px;
+      margin: 5px 0;
+      grid-column-end: span 4;
+      overflow:hidden;
+}
